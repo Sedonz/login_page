@@ -1,0 +1,80 @@
+body {
+  padding: 20px;
+  background-image: url(sky.jpg);
+  background-size: cover;
+  font-family: lato;
+  background-repeat: all;
+  animation: animateBackground 50s linear infinite;
+}
+
+.login p {
+  font-size: 40px;
+  padding: 20px;
+  color: #ddd;
+
+}
+
+
+input {
+    width: 400px;
+    display: block;
+    margin: 5px auto;
+    padding: 5px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    color: #555;
+}
+input::placeholder {
+  font-size: 14px;
+  font-weight: 100;
+}
+input:focus { 
+    outline: none !important;
+    border-color: #719ECE;
+}
+input[type=submit] {
+  background: linear-gradient(to top, #1fccd4, #2086ef);
+  border: 0px;
+  color: #fff;
+  transition: 300ms ease-in-out;
+}
+
+input[type=submit]:hover {
+  background: linear-gradient(to top, #94f2f7, #2086ef);
+  cursor: pointer;
+}
+
+
+.login {
+  background: rgba(1, 15, 31, 0.37);
+  width: 600px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 120px auto;
+  box-shadow: 0px 0px 1px 0px #ddd;
+}
+
+@keyframes animateBackground {
+  from {
+
+  }
+  to {
+    background-position: -1000px 0px;
+  }
+}
+
+/*Start Media Query*/
+
+@media (max-width: 758px) {
+
+  .login {
+    width: 330px;
+    height: 350px
+  }
+  input {
+    width: 300px;
+  }
+
+}
